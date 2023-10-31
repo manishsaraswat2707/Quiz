@@ -1,95 +1,94 @@
 const questions = [
-    {
-      question: "Which is the largest animal in the world?",
-      answers: [
-        { text: "Shark", correct: false },
-        { text: "Blue whale", correct: true },
-        { text: "Elephant", correct: false },
-        { text: "Giraffe", correct: false },
-      ]
-    },
-    {
-      question: "What is the tallest mountain in the world?",
-      answers: [
-        { text: "Mount Everest", correct: true },
-        { text: "K2", correct: false },
-        { text: "Kangchenjunga", correct: false },
-        { text: "Makalu", correct: false },
-      ]
-    },
-    {
-      question: "Who painted the famous artwork 'The Starry Night'?",
-      answers: [
-        { text: "Vincent van Gogh", correct: true },
-        { text: "Leonardo da Vinci", correct: false },
-        { text: "Pablo Picasso", correct: false },
-        { text: "Claude Monet", correct: false },
-      ]
-    },
-    {
-      question: "What is the national animal of India?",
-      answers: [
-        { text: "Lion", correct: false },
-        { text: "Tiger", correct: true },
-        { text: "Elephant", correct: false },
-        { text: "Peacock", correct: false },
-      ]
-    },
-    {
-      question: "In which year did the Titanic sink?",
-      answers: [
-        { text: "1962", correct: false },
-        { text: "1955", correct: false },
-        { text: "1272", correct: false },
-        { text: "1912", correct: true },
-      ]
-    },
-    {
-        question: "In Bloom's Taxonomy, which level involves applying knowledge to solve problems or complete tasks?",
-        answers: [
-          { text: "Remembering", correct: false },
-          { text: "Understanding", correct: true },
-          { text: "Applying", correct: false },
-          { text: "Analyzing", correct: false },
-        ]
-      },
-      {
-        question: "Which learning theory focuses on observing and modeling behavior?",
-        answers: [
-          { text: "Cognitive Theory", correct: true },
-          { text: "Behaviorist Theory", correct: false },
-          { text: "Constructivist Theory", correct: false },
-          { text: "Humanistic Theory", correct: false },
-        ]
-      },
-      {
-        question: "Which teaching strategy focuses on hands-on experiences and active learning?",
-        answers: [
-          { text: "Differentiated Instruction", correct: false },
-          { text: "Scaffolding", correct: false },
-          { text: "Experiential Learning", correct: false },
-          { text: "Direct Instruction", correct: true },
-        ]
-      },
-      {
-        question: "Who is considered the father of modern education?",
-        answers: [
-          { text: "Jean Piaget", correct: false },
-          { text: "Friedrich Froebel", correct: false },
-          { text: "John Dewey", correct: false },
-          { text: "Maria Montessori", correct: true },
-        ]
-      },
-      
-        {
-          question: "Who is considered the father of modern education?",
-          answers: [
-            { text: "Jean Piaget", correct: false },
-            { text: "Friedrich Froebel", correct: false },
-            { text: "John Dewey", correct: false },
-            { text: "Maria Montessori", correct: true },
-          ]
-        },
+  {
+    question: "What is the capital of France?",
+    answers: [
+      { text: "Berlin", correct: false },
+      { text: "Madrid", correct: false },
+      { text: "Rome", correct: false },
+      { text: "Paris", correct: true },
+    ],
+  },
+  {
+    question: "Which gas do plants absorb from the atmosphere and release oxygen during photosynthesis?",
+    answers: [
+      { text: "Oxygen", correct: false },
+      { text: "Carbon dioxide", correct: true },
+      { text: "Nitrogen", correct: false },
+      { text: "Hydrogen", correct: false },
+    ],
+  },
+  {
+    question: "What is the largest planet in our solar system?",
+    answers: [
+      { text: "Earth", correct: false },
+      { text: "Mars", correct: false },
+      { text: "Jupiter", correct: true },
+      { text: "Venus", correct: false },
+    ],
+  },
+  {
+    question: "Who wrote the play 'Romeo and Juliet'?",
+    answers: [
+      { text: "Charles Dickens", correct: false },
+      { text: "William Shakespeare", correct: true },
+      { text: "Jane Austen", correct: false },
+      { text: "Leo Tolstoy", correct: false },
+    ],
+  },
+  {
+    question: "What is the chemical symbol for gold?",
+    answers: [
+      { text: " Go", correct: false },
+      { text: " Gd", correct: false },
+      { text: " Au", correct: true },
+      { text: " Ag", correct: false },
+    ],
+  },
+  {
+    question: "How many continents are there in the world?",
+    answers: [
+      { text: " 4", correct: false },
+      { text: " 5", correct: false },
+      { text: " 6", correct: false },
+      { text: " 7", correct: true },
+    ],
+  },
+  {
+    question: "What is the largest desert in the world?",
+    answers: [
+      { text: "Sahara Desert", correct: true },
+      { text: "Gobi Desert", correct: false },
+      { text: "Arabian Desert", correct: false },
+      { text: "Atacama Desert", correct: false },
+    ],
+  },
+  {
+    question: "Who is the first woman to fly solo across the Atlantic Ocean?",
+    answers: [
+      { text: "Amelia Earhart", correct: true },
+      { text: "Bessie Coleman", correct: false },
+      { text: "Harriet Quimby", correct: false },
+      { text: "Jacqueline Cochran", correct: false },
+    ],
+  },
+  {
+    question: "What is the chemical symbol for water?",
+    answers: [
+      { text: "H2O", correct: true },
+      { text: "CO2", correct: false },
+      { text: "O2", correct: false },
+      { text: "N2", correct: false },
+    ],
+  },
+  {
+    question: "Which planet is known as the 'Red Planet'?",
+    answers: [
+      { text: "Earth", correct: false },
+      { text: "Mars", correct: true },
+      { text: "Venus", correct: false },
+      { text: "Jupiter", correct: false },
+    ],
+  },
         // {
         //   question: "What is the purpose of the 'typeof' operator in JavaScript?",
         //   answers: [
