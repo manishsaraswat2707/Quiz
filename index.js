@@ -1,350 +1,99 @@
 const questions = [
   {
-    question: "What is the capital of France?",
+    question: "What does CPU stand for?",
     answers: [
-      { text: "Berlin", correct: false },
-      { text: "Madrid", correct: false },
-      { text: "Rome", correct: false },
-      { text: "Paris", correct: true },
+      { text: "Central Processing Unit", correct: true },
+      { text: "Computer Processing Unit", correct: false },
+      { text: "Central Processor Unit", correct: false },
+      { text: "Computer Processor Unit", correct: false },
     ],
   },
   {
-    question: "Which gas do plants absorb from the atmosphere and release oxygen during photosynthesis?",
+    question: "What is the function of the ALU in a CPU?",
     answers: [
-      { text: "Oxygen", correct: false },
-      { text: "Carbon dioxide", correct: true },
-      { text: "Nitrogen", correct: false },
-      { text: "Hydrogen", correct: false },
+      { text: "Arithmetic Logic Unit", correct: true },
+      { text: "Advanced Logic Unit", correct: false },
+      { text: "Arithmetic Language Unit", correct: false },
+      { text: "Algorithmic Logic Unit", correct: false },
     ],
   },
   {
-    question: "What is the largest planet in our solar system?",
+    question: "What is a register in computer architecture?",
     answers: [
-      { text: "Earth", correct: false },
-      { text: "Mars", correct: false },
-      { text: "Jupiter", correct: true },
-      { text: "Venus", correct: false },
+      { text: "Temporary storage inside the CPU", correct: true },
+      { text: "Permanent storage on a hard drive", correct: false },
+      { text: "A type of CPU instruction", correct: false },
+      { text: "Input device for a computer", correct: false },
     ],
   },
   {
-    question: "Who wrote the play 'Romeo and Juliet'?",
+    question: "What does RAM stand for?",
     answers: [
-      { text: "Charles Dickens", correct: false },
-      { text: "William Shakespeare", correct: true },
-      { text: "Jane Austen", correct: false },
-      { text: "Leo Tolstoy", correct: false },
+      { text: "Random Access Memory", correct: true },
+      { text: "Read-Only Memory", correct: false },
+      { text: "Run-All Memory", correct: false },
+      { text: "Real Access Memory", correct: false },
     ],
   },
   {
-    question: "What is the chemical symbol for gold?",
+    question: "What is the role of the control unit in a CPU?",
     answers: [
-      { text: " Go", correct: false },
-      { text: " Gd", correct: false },
-      { text: " Au", correct: true },
-      { text: " Ag", correct: false },
+      { text: "Manages the operations of the computer's components", correct: true },
+      { text: "Performs arithmetic and logic operations", correct: false },
+      { text: "Stores data permanently", correct: false },
+      { text: "Provides temporary storage for data", correct: false },
     ],
   },
   {
-    question: "How many continents are there in the world?",
+    question: "What is the purpose of the cache memory in a computer?",
     answers: [
-      { text: " 4", correct: false },
-      { text: " 5", correct: false },
-      { text: " 6", correct: false },
-      { text: " 7", correct: true },
+      { text: "Stores frequently used instructions and data for faster access", correct: true },
+      { text: "Holds the operating system files", correct: false },
+      { text: "Manages the input and output operations", correct: false },
+      { text: "Performs complex mathematical calculations", correct: false },
     ],
   },
   {
-    question: "What is the largest desert in the world?",
+    question: "What is the primary function of the input unit in a computer system?",
     answers: [
-      { text: "Sahara Desert", correct: true },
-      { text: "Gobi Desert", correct: false },
-      { text: "Arabian Desert", correct: false },
-      { text: "Atacama Desert", correct: false },
+      { text: "Accepts data and instructions from the user or external devices", correct: true },
+      { text: "Processes data to produce information", correct: false },
+      { text: "Stores data for future use", correct: false },
+      { text: "Displays the output to the user", correct: false },
     ],
   },
   {
-    question: "Who is the first woman to fly solo across the Atlantic Ocean?",
+    question: "What is the purpose of the clock speed in a CPU?",
     answers: [
-      { text: "Amelia Earhart", correct: true },
-      { text: "Bessie Coleman", correct: false },
-      { text: "Harriet Quimby", correct: false },
-      { text: "Jacqueline Cochran", correct: false },
+      { text: "Determines how fast the CPU can execute instructions", correct: true },
+      { text: "Manages the flow of data in and out of the CPU", correct: false },
+      { text: "Controls the memory allocation in a computer", correct: false },
+      { text: "Handles the graphics processing tasks", correct: false },
     ],
   },
   {
-    question: "What is the chemical symbol for water?",
+    question: "What is binary representation in computer architecture?",
     answers: [
-      { text: "H2O", correct: true },
-      { text: "CO2", correct: false },
-      { text: "O2", correct: false },
-      { text: "N2", correct: false },
+      { text: "A system of encoding data using only 0s and 1s", correct: true },
+      { text: "A way of storing text-based information", correct: false },
+      { text: "An advanced programming language", correct: false },
+      { text: "A method of compressing files", correct: false },
     ],
   },
   {
-    question: "Which planet is known as the 'Red Planet'?",
+    question: "What is the function of the motherboard in a computer?",
     answers: [
-      { text: "Earth", correct: false },
-      { text: "Mars", correct: true },
-      { text: "Venus", correct: false },
-      { text: "Jupiter", correct: false },
+      { text: "Connects and communicates between all the computer's components", correct: true },
+      { text: "Provides power to the computer", correct: false },
+      { text: "Stores the operating system files", correct: false },
+      { text: "Manages the network connections", correct: false },
     ],
   },
-        // {
-        //   question: "What is the purpose of the 'typeof' operator in JavaScript?",
-        //   answers: [
-        //     { text: "To check the type of a variable", correct: true },
-        //     { text: "To assign a value to a variable", correct: false },
-        //     { text: "To perform mathematical operations", correct: false },
-        //     { text: "To define a function", correct: false },
-        //   ]
-        // },
-        // {
-        //   question: "Which array method is used to remove the last element from an array?",
-        //   answers: [
-        //     { text: "pop()", correct: true },
-        //     { text: "push()", correct: false },
-        //     { text: "shift()", correct: false },
-        //     { text: "unshift()", correct: false },
-        //   ]
-        // },
-        // {
-        //   question: "What does CSS stand for?",
-        //   answers: [
-        //     { text: "Cascading Style Sheets", correct: true },
-        //     { text: "Computer Style Sheets", correct: false },
-        //     { text: "Colorful Style Sheets", correct: false },
-        //     { text: "Creative Style Sheets", correct: false },
-        //   ]
-        // },
-        // {
-        //   question: "What does the '+= ' operator do in JavaScript?",
-        //   answers: [
-        //     { text: "Adds and assigns a value", correct: true },
-        //     { text: "Compares two values", correct: false },
-        //     { text: "Subtracts and assigns a value", correct: false },
-        //     { text: "Concatenates two strings", correct: false },
-        //   ]
-        // },
-        // {
-        //   question: "Which keyword is used to declare a constant in JavaScript?",
-        //   answers: [
-        //     { text: "const", correct: true },
-        //     { text: "let", correct: false },
-        //     { text: "var", correct: false },
-        //     { text: "constant", correct: false },
-        //   ]
-        // },
-        // {
-        //   question: "What is the purpose of the 'addEventListener' method in JavaScript?",
-        //   answers: [
-        //     { text: "To handle events like clicks or keypresses", correct: true },
-        //     { text: "To create a new HTML element", correct: false },
-        //     { text: "To define a CSS style rule", correct: false },
-        //     { text: "To perform mathematical operations", correct: false },
-        //   ]
-        // },
-        // {
-        //   question: "Which method is used to convert a string to an integer in JavaScript?",
-        //   answers: [
-        //     { text: "parseInt()", correct: true },
-        //     { text: "toString()", correct: false },
-        //     { text: "parseFloat()", correct: false },
-        //     { text: "toFixed()", correct: false },
-        //   ]
-        // },
-        // {
-        //   question: "What is the purpose of the 'return' statement in a function?",
-        //   answers: [
-        //     { text: "To end the execution of a function and return a value", correct: true },
-        //     { text: "To repeat a block of code", correct: false },
-        //     { text: "To declare a new variable", correct: false },
-        //     { text: "To define a loop", correct: false },
-        //   ]
-        // },
-     
-        // {
-        //   question: "Which teaching method focuses on hands-on experiences and active learning?",
-        //   answers: [
-        //     { text: "Experiential Learning", correct: true },
-        //     { text: "Direct Instruction", correct: false },
-        //     { text: "Differentiated Instruction", correct: false },
-        //     { text: "Constructivist Approach", correct: false },
-        //   ]
-        // },
-        // {
-        //   question: "What is the term for an individual's unique way of processing and understanding information?",
-        //   answers: [
-        //     { text: "Learning Style", correct: true },
-        //     { text: "Teaching Style", correct: false },
-        //     { text: "Instructional Strategy", correct: false },
-        //     { text: "Assessment Method", correct: false },
-        //   ]
-        // },
-        // {
-        //   question: "Which educational theorist is associated with the concept of Zone of Proximal Development (ZPD)?",
-        //   answers: [
-        //     { text: "Lev Vygotsky", correct: true },
-        //     { text: "Jean Piaget", correct: false },
-        //     { text: "B.F. Skinner", correct: false },
-        //     { text: "Maria Montessori", correct: false },
-        //   ]
-        // },
-        // {
-        //   question: "What is the primary focus of inclusive education?",
-        //   answers: [
-        //     { text: "Ensuring access and participation for all students", correct: true },
-        //     { text: "Teaching advanced topics to gifted students", correct: false },
-        //     { text: "Promoting competition and individual achievement", correct: false },
-        //     { text: "Implementing standardized testing", correct: false },
-        //   ]
-        // },
-        // {
-        //   question: "Which assessment technique involves observing students in their natural environment?",
-        //   answers: [
-        //     { text: "Authentic Assessment", correct: true },
-        //     { text: "Formative Assessment", correct: false },
-        //     { text: "Summative Assessment", correct: false },
-        //     { text: "Diagnostic Assessment", correct: false },
-        //   ]
-        // },
-        // {
-        //   question: "What is the term for a visual representation of relationships between concepts or ideas?",
-        //   answers: [
-        //     { text: "Concept Map", correct: true },
-        //     { text: "Venn Diagram", correct: false },
-        //     { text: "Flowchart", correct: false },
-        //     { text: "Mind Map", correct: false },
-        //   ]
-        // },
-        // {
-        //   question: "Which approach emphasizes the importance of the social and emotional development of students?",
-        //   answers: [
-        //     { text: "Humanistic Approach", correct: true },
-        //     { text: "Behaviorist Approach", correct: false },
-        //     { text: "Cognitive Approach", correct: false },
-        //     { text: "Psychoanalytic Approach", correct: false },
-        //   ]
-        // },
-        // {
-        //   question: "What is the term for a group of students with similar learning needs who receive specialized instruction?",
-        //   answers: [
-        //     { text: "Learning Support Group", correct: false },
-        //     { text: "Resource Group", correct: false },
-        //     { text: "Remedial Group", correct: false },
-        //     { text: "Ability Group", correct: true },
-        //   ]
-        // },
-        // {
-        //   question: "Which theorist is known for his stages of moral development?",
-        //   answers: [
-        //     { text: "Lawrence Kohlberg", correct: true },
-        //     { text: "Erik Erikson", correct: false },
-        //     { text: "Abraham Maslow", correct: false },
-        //     { text: "Sigmund Freud", correct: false },
-        //   ]
-        // },
-        // {
-        //   question: "What is the term for a brief, focused instructional strategy used to reinforce learning?",
-        //   answers: [
-        //     { text: "Microteaching", correct: false },
-        //     { text: "Drill and Practice", correct: true },
-        //     { text: "Simulated Teaching", correct: false },
-        //     { text: "Problem-Based Learning", correct: false },
-        //   ]
-        // },
-        //     {
-        //       question: "Which approach focuses on the role of experience and reflection in learning?",
-        //       answers: [
-        //         { text: "Experiential Learning", correct: true },
-        //         { text: "Direct Instruction", correct: false },
-        //         { text: "Differentiated Instruction", correct: false },
-        //         { text: "Constructivist Approach", correct: false },
-        //       ]
-        //     },
-        //     {
-        //       question: "What is the term for the process of connecting new knowledge with existing knowledge?",
-        //       answers: [
-        //         { text: "Assimilation", correct: false },
-        //         { text: "Accommodation", correct: false },
-        //         { text: "Equilibration", correct: false },
-        //         { text: "Scaffolding", correct: true },
-        //       ]
-        //     },
-        //     {
-        //       question: "Which theory suggests that individuals have different intelligences?",
-        //       answers: [
-        //         { text: "Multiple Intelligence Theory", correct: true },
-        //         { text: "Cognitive Development Theory", correct: false },
-        //         { text: "Social Learning Theory", correct: false },
-        //         { text: "Behaviorist Theory", correct: false },
-        //       ]
-        //     },
-        //     {
-        //       question: "What is the term for a strategy that involves breaking down complex tasks into smaller, manageable steps?",
-        //       answers: [
-        //         { text: "Differentiated Instruction", correct: false },
-        //         { text: "Scaffolding", correct: true },
-        //         { text: "Direct Instruction", correct: false },
-        //         { text: "Cooperative Learning", correct: false },
-        //       ]
-        //     },
-        //     {
-        //       question: "Which theorist is known for the concept of Zone of Proximal Development (ZPD)?",
-        //       answers: [
-        //         { text: "Lev Vygotsky", correct: true },
-        //         { text: "Jean Piaget", correct: false },
-        //         { text: "John Dewey", correct: false },
-        //         { text: "Maria Montessori", correct: false },
-        //       ]
-        //     },
-        //     {
-        //       question: "What is the term for an assessment that is conducted during the learning process to provide feedback and guide instruction?",
-        //       answers: [
-        //         { text: "Formative Assessment", correct: true },
-        //         { text: "Summative Assessment", correct: false },
-        //         { text: "Diagnostic Assessment", correct: false },
-        //         { text: "Authentic Assessment", correct: false },
-        //       ]
-        //     },
-        //     {
-        //       question: "Which educational approach emphasizes students' self-directed learning and personal growth?",
-        //       answers: [
-        //         { text: "Humanistic Approach", correct: true },
-        //         { text: "Behaviorist Approach", correct: false },
-        //         { text: "Cognitive Approach", correct: false },
-        //         { text: "Constructivist Approach", correct: false },
-        //       ]
-        //     },
-        //     {
-        //       question: "What is the term for a technique that involves asking students open-ended questions to stimulate critical thinking?",
-        //       answers: [
-        //         { text: "Socratic Method", correct: true },
-        //         { text: "Direct Instruction", correct: false },
-        //         { text: "Cooperative Learning", correct: false },
-        //         { text: "Differentiated Instruction", correct: false },
-        //       ]
-        //     },
-        //     {
-        //       question: "Which theory suggests that individuals learn through observation and imitation of others?",
-        //       answers: [
-        //         { text: "Social Learning Theory", correct: true },
-        //         { text: "Cognitive Development Theory", correct: false },
-        //         { text: "Behaviorist Theory", correct: false },
-        //         { text: "Multiple Intelligence Theory", correct: false },
-        //       ]
-        //     },
-        //     {
-        //       question: "What is the term for a group discussion technique that involves students learning from and with each other?",
-        //       answers: [
-        //         { text: "Cooperative Learning", correct: true },
-        //         { text: "Direct Instruction", correct: false },
-        //         { text: "Differentiated Instruction", correct: false },
-        //         { text: "Scaffolding", correct: false },
-        //       ]
-        //     },
+];
+  
 
 
-      ];
+      
       
       
 
