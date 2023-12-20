@@ -1,101 +1,97 @@
 const questions = [
   {
-    question: "What does CPU stand for?",
+    question: "What is the purpose of the 'cin' object in C++?",
     answers: [
-      { text: "Central Processing Unit", correct: true },
-      { text: "Computer Processing Unit", correct: false },
-      { text: "Central Processor Unit", correct: false },
-      { text: "Computer Processor Unit", correct: false },
+      { text: "To print output to the standard output stream (console)", correct: false },
+      { text: "To perform mathematical calculations", correct: false },
+      { text: "To read input from the standard input stream (keyboard)", correct: true },
+      { text: "To handle file input operations", correct: false },
     ],
   },
   {
-    question: "What is the function of the ALU in a CPU?",
+    question: "How is memory allocated for a dynamic array in C++?",
     answers: [
-      { text: "Arithmetic Logic Unit", correct: true },
-      { text: "Advanced Logic Unit", correct: false },
-      { text: "Arithmetic Language Unit", correct: false },
-      { text: "Algorithmic Logic Unit", correct: false },
+      { text: "Using the 'new' keyword", correct: true },
+      { text: "Automatically by the compiler", correct: false },
+      { text: "By declaring the array with a size at compile time", correct: false },
+      { text: "Using the 'malloc' function", correct: false },
     ],
   },
   {
-    question: "What is a register in computer architecture?",
+    question: "What is the purpose of the 'this' pointer in C++?",
     answers: [
-      { text: "Temporary storage inside the CPU", correct: true },
-      { text: "Permanent storage on a hard drive", correct: false },
-      { text: "A type of CPU instruction", correct: false },
-      { text: "Input device for a computer", correct: false },
+      { text: "It points to the base class object", correct: false },
+      { text: "It points to the derived class object", correct: false },
+      { text: "It points to the current object instance", correct: true },
+      { text: "It points to the global object", correct: false },
     ],
   },
   {
-    question: "What does RAM stand for?",
+    question: "Explain the difference between 'cout' and 'cerr' in C++.",
     answers: [
-      { text: "Random Access Memory", correct: true },
-      { text: "Read-Only Memory", correct: false },
-      { text: "Run-All Memory", correct: false },
-      { text: "Real Access Memory", correct: false },
+      { text: "'cerr' is used for standard output, while 'cout' is used for standard error output", correct: false },
+      { text: "'cout' and 'cerr' are interchangeable and can be used interchangeably", correct: false },
+      { text: "'cerr' is used for file input operations, while 'cout' is used for console output", correct: false },
+      { text: "'cout' is used for standard output, while 'cerr' is used for standard error output", correct: true },
+
     ],
   },
   {
-    question: "What is the role of the control unit in a CPU?",
+    question: "What is the role of the 'break' statement in a switch statement in C++?",
     answers: [
-      { text: "Manages the operations of the computer's components", correct: true },
-      { text: "Performs arithmetic and logic operations", correct: false },
-      { text: "Stores data permanently", correct: false },
-      { text: "Provides temporary storage for data", correct: false },
+      { text: "It terminates the switch statement and transfers control outside of it", correct: true },
+      { text: "It skips the current case and moves to the next one", correct: false },
+      { text: "It restarts the switch statement from the beginning", correct: false },
+      { text: "It is used to exit the entire program", correct: false },
     ],
   },
   {
-    question: "What is the purpose of the cache memory in a computer?",
+    question: "What is the purpose of the 'inline' keyword in C++?",
     answers: [
-      { text: "Stores frequently used instructions and data for faster access", correct: true },
-      { text: "Holds the operating system files", correct: false },
-      { text: "Manages the input and output operations", correct: false },
-      { text: "Performs complex mathematical calculations", correct: false },
+      { text: "It declares a function to be compiled separately", correct: false },
+      { text: "It suggests the compiler to inline the function, replacing the function call with the actual code", correct: true },
+      { text: "It indicates that the function should not be inlined", correct: false },
+      { text: "It specifies that the function is a member of a class", correct: false },
     ],
   },
   {
-    question: "What is the primary function of the input unit in a computer system?",
+    question: "What is function overloading in C++?",
     answers: [
-      { text: "Accepts data and instructions from the user or external devices", correct: true },
-      { text: "Processes data to produce information", correct: false },
-      { text: "Stores data for future use", correct: false },
-      { text: "Displays the output to the user", correct: false },
+      { text: "Defining multiple functions with the same name but different parameters", correct: true },
+      { text: "Defining multiple functions with the same name and same parameters", correct: false },
+      { text: "Declaring a function inside another function", correct: false },
+      { text: "Defining a function with multiple return types", correct: false },
     ],
   },
   {
-    question: "What is the purpose of the clock speed in a CPU?",
+    question: "Explain the concept of pointers in C++.",
     answers: [
-      { text: "Determines how fast the CPU can execute instructions", correct: true },
-      { text: "Manages the flow of data in and out of the CPU", correct: false },
-      { text: "Controls the memory allocation in a computer", correct: false },
-      { text: "Handles the graphics processing tasks", correct: false },
+      { text: "Pointers are used for mathematical calculations", correct: false },
+      { text: "Pointers are only used with arrays", correct: false },
+      { text: "Pointers are used for file input operations", correct: false },
+      { text: "Pointers are variables that store memory addresses", correct: true },
+
     ],
   },
   {
-    question: "What is binary representation in computer architecture?",
+    question: "What is the 'const' keyword used for in C++?",
     answers: [
-      { text: "A system of encoding data using only 0s and 1s", correct: true },
-      { text: "A way of storing text-based information", correct: false },
-      { text: "An advanced programming language", correct: false },
-      { text: "A method of compressing files", correct: false },
+      { text: "It specifies that a variable is constant and cannot be used in calculations", correct: false },
+      { text: "It is used to define constant functions", correct: false },
+      { text: "It indicates that a variable's value cannot be changed", correct: true },
+      { text: "It declares a constant pointer to a variable", correct: false },
     ],
   },
   {
-    question: "What is the function of the motherboard in a computer?",
+    question: "What is the purpose of the 'namespace' in C++?",
     answers: [
-      { text: "Connects and communicates between all the computer's components", correct: true },
-      { text: "Provides power to the computer", correct: false },
-      { text: "Stores the operating system files", correct: false },
-      { text: "Manages the network connections", correct: false },
+      { text: "It organizes code into separate logical units and avoids naming conflicts", correct: true },
+      { text: "It specifies the space allocated for variables in memory", correct: false },
+      { text: "It defines the scope of a function", correct: false },
+      { text: "It is used for mathematical calculations", correct: false },
     ],
   },
 ];
-  
-
-
-      
-      
-      
 
   
   const questionElement = document.getElementById("question");
